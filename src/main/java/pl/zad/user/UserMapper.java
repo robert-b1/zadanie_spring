@@ -3,6 +3,7 @@ package pl.zad.user;
 import org.springframework.stereotype.Component;
 import pl.zad.user.dto.CreateUserDTO;
 import pl.zad.user.dto.UpdateUserDTO;
+import pl.zad.user.dto.UpdateUserDTO;
 import pl.zad.user.dto.UserDTO;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public class UserMapper {
         return user;
     }
 
-    public User fromDTO(UpdateUserDTO userDTO) {
+    public User fromDTO(UpdateUserDTO userDTO){
         User user = new User();
         user.setId(userDTO.getId());
         user.setName(userDTO.getName());

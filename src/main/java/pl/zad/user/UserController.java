@@ -39,7 +39,7 @@ public class UserController {
     }
 
     @PutMapping("/users/{userId}")
-    public void updateUser(UpdateUserDTO userDTO, @PathVariable long userId) {
+    public void updateUserDTO(UpdateUserDTO userDTO, @PathVariable long userId) {
         User userFromDb = userService.getUser(userId);
 
         if (userFromDb != null) {
